@@ -12,9 +12,35 @@ body {
   line-height: 1.5;
 }
 
+/* general */
+.list{
+  list-style: none;
+}
+
+.par,.hed,.list{
+  margin: 0;
+  padding: 0;
+}
+
+.info{
+  font-weight: bold;
+}
+
 #search-box {
   font: inherit;
   padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+}
+
+.country-item,
+.conutry-info-name-flag{
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.conutry-info-item:not(:last-child){
+  margin-bottom: 20px;
 }
