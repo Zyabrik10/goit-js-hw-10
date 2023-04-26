@@ -14,8 +14,9 @@ search_box.addEventListener(
     }
 
     const data = fetchCountries(search_box.value);
-    data.then(data => {
-      const countrys = data.slice();
+    
+    data.then(arr => {
+      const countrys = arr.slice();
 
       let list = '';
 
